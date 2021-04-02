@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.tandeminnovation.fitsystemwindowsshowcase.ui.appBar.AppBarFragment"
+        android:label="AppBar"
+        tools:layout="@layout/fragment_app_bar" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.tandeminnovation.fitsystemwindowsshowcase.ui.appBarWithError.AppBarWithErrorFragment"
+        android:label="AppBarWithError"
+        tools:layout="@layout/fragment_app_bar_with_error" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.tandeminnovation.fitsystemwindowsshowcase.ui.appBarWithContentError.AppBarWithContentErrorFragment"
+        android:label="AppBarWithContentErrorFragment"
+        tools:layout="@layout/fragment_app_bar_with_content_error" />
+
+    <fragment
+        android:id="@+id/nav_collapsing_toolbar"
+        android:name="com.tandeminnovation.fitsystemwindowsshowcase.ui.colapsingtoolbar.CollapsingToolbarFragment"
+        android:label="CollapsingToolbar"
+        tools:layout="@layout/fragment_collapsing_toolbar" />
+</navigation>
